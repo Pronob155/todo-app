@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-controls">
+            <button id="darkModeBtn" aria-label="Toggle dark mode">🌙</button>
+            <div id="currentTime">00:00:00</div>
+        </div>
+
+        <h1>To-Do App</h1>
+        <p>Stay focused and get things done.</p>
+    </header>
+
+    <main>
+
+        <section class="task-section">
+            <h2>Tasks</h2>
+
+            <div class="task-input">
+                <input type="text" id="taskInput" placeholder="Enter a task...">
+
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            <div class="task-stats">
+                <span>Total: <strong id="totalTasks">0</strong></span>
+                <span>Completed: <strong id="completedTasks">0</strong></span>
+            </div>
+            <button id="clearCompletedBtn">Clear Completed</button>
+
+            <ul id="taskList"></ul>
+        </section>
+
+        <section class="pomodoro-section">
+            <h2>Pomodoro</h2>
+
+            <div id="pomodoroTime">25:00</div>
+
+            <div class="pomodoro-controls">
+                <button id="startPomodoroBtn">Start</button>
+                <button id="pausePomodoroBtn">Pause</button>
+                <button id="resetPomodoroBtn">Reset</button>
+            </div>
+        </section>
+
+        <section class="calendar-section">
+            <h2>Calendar</h2>
+
+            <div class="calendar-header">
+                <button id="prevMonthBtn">‹</button>
+
+                <h3 id="calendarMonth">September 2026</h3>
+
+                <button id="nextMonthBtn">›</button>
+            </div>
+
+            <div class="calendar-weekdays">
+                <span>Sun</span>
+                <span>Mon</span>
+                <span>Tue</span>
+                <span>Wed</span>
+                <span>Thu</span>
+                <span>Fri</span>
+                <span>Sat</span>
+            </div>
+
+            <div id="calendarDays"></div>
+        </section>
+
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
