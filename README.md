@@ -1,44 +1,150 @@
-# 📝 To-Do App
+# 🚀 To-Do App
 
-A clean, responsive, and beginner-friendly **To-Do App** built with **HTML, CSS, and Vanilla JavaScript**.
-It helps users manage daily tasks, track progress, stay focused with a Pomodoro Timer, and organize tasks with a built-in Calendar.
+<div align="center">
+
+### A Simple & Productive Task Management App
+
+**Plan your tasks. Track your progress. Stay organized.**
+
+A clean, responsive, and beginner-friendly To-Do application built with **HTML, CSS, and Vanilla JavaScript**.
+The app provides essential task management features along with a Pomodoro Timer, Calendar, Current Time, and Light/Dark Mode.
+
+<p>
+  <a href="#-overview">Overview</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-project-structure">Project Structure</a> •
+  <a href="#-getting-started">Getting Started</a>
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/LocalStorage-API-success?style=for-the-badge" alt="Local Storage">
+  <img src="https://img.shields.io/badge/Responsive-Design-blueviolet?style=for-the-badge" alt="Responsive Design">
+  <img src="https://img.shields.io/badge/GitHub-Pages-181717?style=for-the-badge&logo=github" alt="GitHub Pages">
+</p>
+
+</div>
+
+---
+
+## 📖 Overview
+
+**To-Do App** is a lightweight task management application designed to help users organize and manage their daily activities from a simple and intuitive interface.
+
+The application allows users to create, edit, complete, and delete tasks while keeping track of their overall task progress.
+
+Along with basic task management, the app includes productivity-focused tools such as a **Pomodoro Timer**, **Calendar**, **Current Time**, and **Light/Dark Mode**.
+
+The project runs entirely in the browser and uses **Local Storage** to preserve tasks and user preferences without requiring a backend or database.
 
 ---
 
 ## ✨ Features
 
-* ✅ Add, edit, and delete tasks
-* ☑️ Mark tasks as completed
-* 📊 Task statistics and progress tracking
-* 🧹 Clear all completed tasks
-* 🍅 Pomodoro Timer for focused work sessions
-* 📅 Built-in Calendar
-* 🕐 Real-time Current Time display
-* 🌙 Light / Dark Mode
-* 💾 Local Storage support
-* 📱 Responsive design for different screen sizes
-* ⌨️ Press **Enter** to quickly add a task
+### ✅ Task Management
+
+* Add new tasks
+* Edit existing tasks
+* Delete tasks
+* Mark tasks as completed
+* Track task statistics
+* View task completion progress
+* Clear all completed tasks
+* Empty-state handling
+* Press **Enter** to quickly add a task
+
+### 📊 Task Statistics
+
+The application provides quick statistics to help users track their productivity.
+
+* Total Tasks
+* Completed Tasks
+* Pending Tasks
+* Task progress
+
+### 🍅 Pomodoro Timer
+
+A built-in Pomodoro Timer helps users maintain focused work or study sessions.
+
+* Focused work sessions
+* Countdown timer
+* Simple productivity-focused interface
+
+### 📅 Calendar
+
+The built-in Calendar helps users view and organize dates while managing their daily tasks.
+
+* View calendar dates
+* Navigate between dates
+* Select dates
+* Simple and clean interface
+
+### 🕐 Current Time
+
+* Displays the current time
+* Updates dynamically
+* Helps users stay aware of their schedule
+
+### 🌙 Light / Dark Mode
+
+* Switch between Light and Dark themes
+* Clean interface in both modes
+* Theme preference is saved using Local Storage
+
+### 💾 Local Storage
+
+The application uses the browser's **Local Storage API** to preserve user data.
+
+Tasks and theme preferences remain available even after:
+
+* Refreshing the page
+* Closing the browser
+* Reopening the application
+
+No backend or database is required.
+
+### 📱 Responsive Design
+
+The application is designed to work across different screen sizes:
+
+* 💻 Desktop
+* 💻 Laptop
+* 📱 Mobile
+* 📟 Tablet
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-* **HTML5** — Page structure
-* **CSS3** — Styling and responsive design
-* **Vanilla JavaScript** — Functionality and DOM manipulation
-* **Local Storage** — Saving tasks and theme preferences
-* **Git & GitHub** — Version control
-* **GitHub Pages** — Deployment
+| Technology             | Purpose                                       |
+| ---------------------- | --------------------------------------------- |
+| **HTML5**              | Application structure and semantic markup     |
+| **CSS3**               | Styling, layout, themes and responsive design |
+| **Vanilla JavaScript** | Application logic and DOM manipulation        |
+| **Local Storage API**  | Client-side data persistence                  |
+| **Git & GitHub**       | Version control                               |
+| **GitHub Pages**       | Project deployment                            |
+
+### Development Philosophy
+
+This project is intentionally built without any frontend framework or backend.
+
+It uses:
+
+* Vanilla JavaScript
+* CSS3
+* Browser APIs
+* Local Storage
+* Client-side rendering
+
+Keeping the application framework-free makes it lightweight, easy to understand, and suitable for learning the fundamentals of web development.
 
 ---
 
-## 🚀 Live Demo
-
-👉 **[Open the Live App](https://pronob155.github.io/todo-app/)**
-
----
-
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
 todo-app/
@@ -56,81 +162,153 @@ todo-app/
     └── ...
 ```
 
----
+### File Responsibilities
 
-## 📖 How to Use
+**`index.html`**
+Contains the main structure and UI elements of the application.
 
-1. Enter a task in the input field.
-2. Click **Add Task** or press **Enter**.
-3. Use the checkbox to mark a task as completed.
-4. Click ✏️ to edit a task.
-5. Click 💾 to save the edited task.
-6. Click 🗑️ to delete a task.
-7. Use **Clear Completed** to remove completed tasks.
-8. Use the **Pomodoro Timer** for focused study or work sessions.
-9. Use the **Calendar** to view and select dates.
-10. Toggle between **Light and Dark Mode** using the theme button.
-11. Your tasks and theme preference are automatically saved using **Local Storage**.
+**`css/style.css`**
+Contains the application's styling, layout, themes, animations, and responsive design rules.
+
+**`js/script.js`**
+Handles task management, DOM manipulation, task statistics, Pomodoro Timer, Calendar, Current Time, theme switching, and Local Storage functionality.
+
+**`assets/`**
+Contains images, icons, and other project resources.
 
 ---
 
-## 🎯 Project Purpose
+## 🚀 Getting Started
 
-This project was developed as a **beginner-friendly web development project** to practice and understand the fundamentals of front-end development.
+### 1. Clone the Repository
 
-Through this project, I practiced:
+```bash
+git clone https://github.com/Pronob155/todo-app.git
+```
 
-* HTML page structure
-* CSS styling and responsive design
-* JavaScript fundamentals
-* DOM manipulation
-* Event handling
-* Local Storage
-* Date and Time handling
-* Git and GitHub
-* GitHub Pages deployment
+### 2. Navigate to the Project
+
+```bash
+cd todo-app
+```
+
+### 3. Run the Application
+
+This is a static web application, so no backend server or database is required.
+
+Simply open:
+
+```text
+index.html
+```
+
+in your browser.
+
+For development, you can also use **VS Code Live Server**.
+
+---
+
+## 🌐 Live Demo
+
+Try the application directly in your browser:
+
+👉 **[Open the Live App](https://pronob155.github.io/todo-app/)**
+
+---
+
+## 🗺️ Development Roadmap
+
+### ✅ Completed
+
+* [x] Project foundation
+* [x] Responsive interface
+* [x] Task creation
+* [x] Task editing
+* [x] Task deletion
+* [x] Task completion
+* [x] Task statistics
+* [x] Clear completed tasks
+* [x] Pomodoro Timer
+* [x] Calendar
+* [x] Current Time
+* [x] Light / Dark Mode
+* [x] Local Storage integration
+* [x] GitHub Pages deployment
+
+---
+
+## 🎯 Project Goals
+
+The main goals of this project are to:
+
+* Build a practical task management application
+* Strengthen HTML, CSS, and JavaScript skills
+* Practice DOM manipulation
+* Understand JavaScript event handling
+* Learn client-side data persistence
+* Work with browser APIs
+* Practice responsive web design
+* Understand Git and GitHub workflows
+* Deploy a real-world project using GitHub Pages
+* Create a useful beginner-friendly portfolio project
 
 ---
 
 ## 💡 What I Learned
 
-Building this project helped me understand how different web technologies work together to create an interactive application.
+Through this project, I gained practical experience with:
 
-Some of the key concepts I practiced include:
-
-* Creating dynamic UI elements with JavaScript
-* Managing user interactions and events
-* Storing and retrieving data from Local Storage
-* Updating the interface without reloading the page
-* Implementing Light/Dark themes
-* Creating a functional Pomodoro Timer
-* Making a responsive web interface
-* Deploying a project using GitHub Pages
+* HTML5 page structure
+* CSS3 layouts and responsive design
+* JavaScript DOM manipulation
+* Event handling
+* Local Storage
+* Dynamic UI updates
+* Date and Time handling
+* Theme switching
+* Pomodoro Timer implementation
+* Client-side application state
+* Git and GitHub
+* GitHub Pages deployment
 
 ---
 
-## 🔮 Future Improvements
+## 🔒 Privacy
 
-Some features that could be added in future versions:
+This application stores user data locally in the browser.
 
-* 🔔 Task reminders and notifications
-* 🔎 Search and filter tasks
-* 🏷️ Task categories and priorities
-* 📈 More detailed productivity statistics
-* 🎵 Focus sounds for Pomodoro sessions
-* ☁️ Cloud-based task synchronization
-* 👤 User accounts and authentication
+There is currently:
+
+* No backend server
+* No external database
+* No account system
+* No server-side storage of tasks
+
+Tasks and theme preferences are stored using the browser's **Local Storage**.
 
 ---
 
 ## 👨‍💻 Author
 
-**Pronob**
+### Pronob Das
 
-🔗 **GitHub:** [Pronob155](https://github.com/Pronob155)
+**GitHub:**
+[Pronob155](https://github.com/Pronob155)
 
 ---
 
 ## ⭐ Support
 
-If you find th
+If you find this project useful or interesting, consider giving the repository a **⭐ Star** on GitHub.
+
+Feedback and suggestions are always welcome.
+
+---
+
+<div align="center">
+
+### 📝 Plan Better. Stay Organized. Get Things Done.
+
+**To-Do App — Your Simple Daily Task Manager**
+
+</div>
