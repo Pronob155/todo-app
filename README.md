@@ -42,6 +42,16 @@ The project runs entirely in the browser and uses **Local Storage** to preserve 
 
 ---
 
+
+## 🌐 Live Demo
+
+Try the application directly in your browser:
+
+👉 **[Open the Live App](https://pronob155.github.io/todo-app/)**
+
+---
+
+
 ## ✨ Features
 
 ### ✅ Task Management
@@ -205,14 +215,6 @@ index.html
 in your browser.
 
 For development, you can also use **VS Code Live Server**.
-
----
-
-## 🌐 Live Demo
-
-Try the application directly in your browser:
-
-👉 **[Open the Live App](https://pronob155.github.io/todo-app/)**
 
 ---
 
