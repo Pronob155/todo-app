@@ -235,8 +235,22 @@ function renderTasks() {
             editButton.setAttribute("aria-label", "Save task");
 
             editInput.focus();
-        });
 
+            editInput.addEventListener("keydown", function (event) {
+                if (event.key === "Enter") {
+                    const updatedTask = editInput.value.trim();
+
+                    if (updatedTask === "") {
+                        return;
+                    }
+
+                    task.text = updatedTask;
+
+                    saveTasks();
+                    renderTasks();
+                }
+            });
+        });
 
         // Delete
 
